@@ -7,20 +7,96 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		264849DF1D77DBFE0063EB25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 264849DE1D77DBFE0063EB25 /* AppDelegate.m */; };
-		264849E21D77DBFE0063EB25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 264849E11D77DBFE0063EB25 /* main.m */; };
 		264849E41D77DBFE0063EB25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 264849E31D77DBFE0063EB25 /* Assets.xcassets */; };
-		264849E71D77DBFE0063EB25 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 264849E51D77DBFE0063EB25 /* MainMenu.xib */; };
+		264849EF1D77DCB00063EB25 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264849EE1D77DCB00063EB25 /* GLUT.framework */; };
+		264849F11D77DCB70063EB25 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264849F01D77DCB70063EB25 /* OpenGL.framework */; };
+		26F678501D77DD9300674B2E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264849F01D77DCB70063EB25 /* OpenGL.framework */; };
+		26F678511D77DD9300674B2E /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264849EE1D77DCB00063EB25 /* GLUT.framework */; };
+		26F678531D77DD9300674B2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 264849E31D77DBFE0063EB25 /* Assets.xcassets */; };
+		26F6786E1D77DF7F00674B2E /* brick.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F6785D1D77DF7F00674B2E /* brick.tga */; };
+		26F6786F1D77DF7F00674B2E /* ceiling.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F6785E1D77DF7F00674B2E /* ceiling.tga */; };
+		26F678701D77DF7F00674B2E /* floor.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F6785F1D77DF7F00674B2E /* floor.tga */; };
+		26F678711D77DF7F00674B2E /* Tunnel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26F678601D77DF7F00674B2E /* Tunnel.cpp */; };
+		26F678721D77DF7F00674B2E /* Pyramid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26F678621D77DF7F00674B2E /* Pyramid.cpp */; };
+		26F678731D77DF7F00674B2E /* stone.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F678631D77DF7F00674B2E /* stone.tga */; };
+		26F678741D77DF7F00674B2E /* Marble.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F678651D77DF7F00674B2E /* Marble.tga */; };
+		26F678751D77DF7F00674B2E /* Marslike.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F678661D77DF7F00674B2E /* Marslike.tga */; };
+		26F678761D77DF7F00674B2E /* MoonLike.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F678671D77DF7F00674B2E /* MoonLike.tga */; };
+		26F678771D77DF7F00674B2E /* SphereWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26F678681D77DF7F00674B2E /* SphereWorld.cpp */; };
+		26F678781D77DF7F00674B2E /* brick.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F6786A1D77DF7F00674B2E /* brick.tga */; };
+		26F678791D77DF7F00674B2E /* ceiling.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F6786B1D77DF7F00674B2E /* ceiling.tga */; };
+		26F6787A1D77DF7F00674B2E /* floor.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F6786C1D77DF7F00674B2E /* floor.tga */; };
+		26F6787B1D77DF7F00674B2E /* Tunnel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26F6786D1D77DF7F00674B2E /* Tunnel.cpp */; };
+		26F6787C1D77DFA600674B2E /* Tunnel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26F678601D77DF7F00674B2E /* Tunnel.cpp */; };
+		26F6787D1D77DFB500674B2E /* brick.tga in Sources */ = {isa = PBXBuildFile; fileRef = 26F6785D1D77DF7F00674B2E /* brick.tga */; };
+		26F6787E1D77DFBF00674B2E /* floor.tga in Sources */ = {isa = PBXBuildFile; fileRef = 26F6785F1D77DF7F00674B2E /* floor.tga */; };
+		26F6787F1D77DFC300674B2E /* ceiling.tga in Sources */ = {isa = PBXBuildFile; fileRef = 26F6785E1D77DF7F00674B2E /* ceiling.tga */; };
+		26F679151D78315300674B2E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264849F01D77DCB70063EB25 /* OpenGL.framework */; };
+		26F679161D78315300674B2E /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264849EE1D77DCB00063EB25 /* GLUT.framework */; };
+		26F679181D78315300674B2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 264849E31D77DBFE0063EB25 /* Assets.xcassets */; };
+		26F6791E1D78318400674B2E /* Marble.tga in Sources */ = {isa = PBXBuildFile; fileRef = 26F678651D77DF7F00674B2E /* Marble.tga */; };
+		26F6791F1D78318400674B2E /* Marslike.tga in Sources */ = {isa = PBXBuildFile; fileRef = 26F678661D77DF7F00674B2E /* Marslike.tga */; };
+		26F679201D78318400674B2E /* MoonLike.tga in Sources */ = {isa = PBXBuildFile; fileRef = 26F678671D77DF7F00674B2E /* MoonLike.tga */; };
+		26F679211D78318400674B2E /* SphereWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26F678681D77DF7F00674B2E /* SphereWorld.cpp */; };
+		26F679361D785A7000674B2E /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F679351D785A7000674B2E /* libGLTools.a */; };
+		26F679371D785A7000674B2E /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F679351D785A7000674B2E /* libGLTools.a */; };
+		26F679381D785A7000674B2E /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F679351D785A7000674B2E /* libGLTools.a */; };
+		26F679391D785BE300674B2E /* brick.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F6785D1D77DF7F00674B2E /* brick.tga */; };
+		26F6793A1D785BE700674B2E /* ceiling.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F6785E1D77DF7F00674B2E /* ceiling.tga */; };
+		26F6793B1D785BEB00674B2E /* floor.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F6785F1D77DF7F00674B2E /* floor.tga */; };
+		26F6793C1D785C0500674B2E /* Marble.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F678651D77DF7F00674B2E /* Marble.tga */; };
+		26F6793D1D785C0900674B2E /* Marslike.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F678661D77DF7F00674B2E /* Marslike.tga */; };
+		26F6793E1D785C0E00674B2E /* MoonLike.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F678671D77DF7F00674B2E /* MoonLike.tga */; };
+		26F679411D785C7200674B2E /* Marble.tga in Sources */ = {isa = PBXBuildFile; fileRef = 26F678651D77DF7F00674B2E /* Marble.tga */; };
+		26F679421D785C7200674B2E /* Marslike.tga in Sources */ = {isa = PBXBuildFile; fileRef = 26F678661D77DF7F00674B2E /* Marslike.tga */; };
+		26F679431D785C7200674B2E /* MoonLike.tga in Sources */ = {isa = PBXBuildFile; fileRef = 26F678671D77DF7F00674B2E /* MoonLike.tga */; };
+		26F679461D785C7200674B2E /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F679351D785A7000674B2E /* libGLTools.a */; };
+		26F679471D785C7200674B2E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264849F01D77DCB70063EB25 /* OpenGL.framework */; };
+		26F679481D785C7200674B2E /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264849EE1D77DCB00063EB25 /* GLUT.framework */; };
+		26F6794A1D785C7200674B2E /* MoonLike.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F678671D77DF7F00674B2E /* MoonLike.tga */; };
+		26F6794B1D785C7200674B2E /* Marslike.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F678661D77DF7F00674B2E /* Marslike.tga */; };
+		26F6794C1D785C7200674B2E /* Marble.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F678651D77DF7F00674B2E /* Marble.tga */; };
+		26F6794D1D785C7200674B2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 264849E31D77DBFE0063EB25 /* Assets.xcassets */; };
+		26F6795A1D785C8500674B2E /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F679351D785A7000674B2E /* libGLTools.a */; };
+		26F6795B1D785C8500674B2E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264849F01D77DCB70063EB25 /* OpenGL.framework */; };
+		26F6795C1D785C8500674B2E /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264849EE1D77DCB00063EB25 /* GLUT.framework */; };
+		26F679671D785CBD00674B2E /* Pyramid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26F678621D77DF7F00674B2E /* Pyramid.cpp */; };
+		26F679681D785CC200674B2E /* stone.tga in Sources */ = {isa = PBXBuildFile; fileRef = 26F678631D77DF7F00674B2E /* stone.tga */; };
+		26F679691D785CC800674B2E /* stone.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F678631D77DF7F00674B2E /* stone.tga */; };
+		26F6796B1D785CE600674B2E /* Tunnel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26F6786D1D77DF7F00674B2E /* Tunnel.cpp */; };
+		26F6796C1D785CF500674B2E /* brick.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F6786A1D77DF7F00674B2E /* brick.tga */; };
+		26F6796D1D785CFC00674B2E /* ceiling.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F6786B1D77DF7F00674B2E /* ceiling.tga */; };
+		26F6796E1D785D0300674B2E /* floor.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F6786C1D77DF7F00674B2E /* floor.tga */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		264849DA1D77DBFE0063EB25 /* ChapterFiveOpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChapterFiveOpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		264849DD1D77DBFE0063EB25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		264849DE1D77DBFE0063EB25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		264849E11D77DBFE0063EB25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		264849E31D77DBFE0063EB25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		264849E61D77DBFE0063EB25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		264849E81D77DBFE0063EB25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		264849EE1D77DCB00063EB25 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		264849F01D77DCB70063EB25 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		26F678581D77DD9300674B2E /* Anisotropic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anisotropic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26F6785D1D77DF7F00674B2E /* brick.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = brick.tga; sourceTree = "<group>"; };
+		26F6785E1D77DF7F00674B2E /* ceiling.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = ceiling.tga; sourceTree = "<group>"; };
+		26F6785F1D77DF7F00674B2E /* floor.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = floor.tga; sourceTree = "<group>"; };
+		26F678601D77DF7F00674B2E /* Tunnel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tunnel.cpp; sourceTree = "<group>"; };
+		26F678621D77DF7F00674B2E /* Pyramid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pyramid.cpp; sourceTree = "<group>"; };
+		26F678631D77DF7F00674B2E /* stone.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = stone.tga; sourceTree = "<group>"; };
+		26F678651D77DF7F00674B2E /* Marble.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Marble.tga; sourceTree = "<group>"; };
+		26F678661D77DF7F00674B2E /* Marslike.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Marslike.tga; sourceTree = "<group>"; };
+		26F678671D77DF7F00674B2E /* MoonLike.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = MoonLike.tga; sourceTree = "<group>"; };
+		26F678681D77DF7F00674B2E /* SphereWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SphereWorld.cpp; sourceTree = "<group>"; };
+		26F6786A1D77DF7F00674B2E /* brick.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = brick.tga; sourceTree = "<group>"; };
+		26F6786B1D77DF7F00674B2E /* ceiling.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = ceiling.tga; sourceTree = "<group>"; };
+		26F6786C1D77DF7F00674B2E /* floor.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = floor.tga; sourceTree = "<group>"; };
+		26F6786D1D77DF7F00674B2E /* Tunnel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tunnel.cpp; sourceTree = "<group>"; };
+		26F6791C1D78315300674B2E /* SphereWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SphereWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26F6791D1D78315300674B2E /* Anisotropic copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Anisotropic copy-Info.plist"; path = "/Users/xuliang/Documents/IosWorkSpace/ChapterFiveOpenGL/Anisotropic copy-Info.plist"; sourceTree = "<absolute>"; };
+		26F679351D785A7000674B2E /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLTools.a; sourceTree = "<group>"; };
+		26F679511D785C7200674B2E /* Pyramid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pyramid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26F679521D785C7200674B2E /* SphereWorld copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SphereWorld copy-Info.plist"; path = "/Users/xuliang/Documents/IosWorkSpace/ChapterFiveOpenGL/SphereWorld copy-Info.plist"; sourceTree = "<absolute>"; };
+		26F679651D785C8500674B2E /* Tunnel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tunnel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26F679661D785C8500674B2E /* Pyramid copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Pyramid copy-Info.plist"; path = "/Users/xuliang/Documents/IosWorkSpace/ChapterFiveOpenGL/Pyramid copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +104,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26F679361D785A7000674B2E /* libGLTools.a in Frameworks */,
+				264849F11D77DCB70063EB25 /* OpenGL.framework in Frameworks */,
+				264849EF1D77DCB00063EB25 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F6784E1D77DD9300674B2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F679371D785A7000674B2E /* libGLTools.a in Frameworks */,
+				26F678501D77DD9300674B2E /* OpenGL.framework in Frameworks */,
+				26F678511D77DD9300674B2E /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F679131D78315300674B2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F679381D785A7000674B2E /* libGLTools.a in Frameworks */,
+				26F679151D78315300674B2E /* OpenGL.framework in Frameworks */,
+				26F679161D78315300674B2E /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F679451D785C7200674B2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F679461D785C7200674B2E /* libGLTools.a in Frameworks */,
+				26F679471D785C7200674B2E /* OpenGL.framework in Frameworks */,
+				26F679481D785C7200674B2E /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F679591D785C8500674B2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F6795A1D785C8500674B2E /* libGLTools.a in Frameworks */,
+				26F6795B1D785C8500674B2E /* OpenGL.framework in Frameworks */,
+				26F6795C1D785C8500674B2E /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,8 +156,14 @@
 		264849D11D77DBFE0063EB25 = {
 			isa = PBXGroup;
 			children = (
+				26F679351D785A7000674B2E /* libGLTools.a */,
+				264849F01D77DCB70063EB25 /* OpenGL.framework */,
+				264849EE1D77DCB00063EB25 /* GLUT.framework */,
 				264849DC1D77DBFE0063EB25 /* ChapterFiveOpenGL */,
 				264849DB1D77DBFE0063EB25 /* Products */,
+				26F6791D1D78315300674B2E /* Anisotropic copy-Info.plist */,
+				26F679521D785C7200674B2E /* SphereWorld copy-Info.plist */,
+				26F679661D785C8500674B2E /* Pyramid copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,6 +171,10 @@
 			isa = PBXGroup;
 			children = (
 				264849DA1D77DBFE0063EB25 /* ChapterFiveOpenGL.app */,
+				26F678581D77DD9300674B2E /* Anisotropic.app */,
+				26F6791C1D78315300674B2E /* SphereWorld.app */,
+				26F679511D785C7200674B2E /* Pyramid.app */,
+				26F679651D785C8500674B2E /* Tunnel.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,10 +182,8 @@
 		264849DC1D77DBFE0063EB25 /* ChapterFiveOpenGL */ = {
 			isa = PBXGroup;
 			children = (
-				264849DD1D77DBFE0063EB25 /* AppDelegate.h */,
-				264849DE1D77DBFE0063EB25 /* AppDelegate.m */,
+				26F6785B1D77DF7F00674B2E /* Chapter05 */,
 				264849E31D77DBFE0063EB25 /* Assets.xcassets */,
-				264849E51D77DBFE0063EB25 /* MainMenu.xib */,
 				264849E81D77DBFE0063EB25 /* Info.plist */,
 				264849E01D77DBFE0063EB25 /* Supporting Files */,
 			);
@@ -66,9 +193,61 @@
 		264849E01D77DBFE0063EB25 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				264849E11D77DBFE0063EB25 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26F6785B1D77DF7F00674B2E /* Chapter05 */ = {
+			isa = PBXGroup;
+			children = (
+				26F6785C1D77DF7F00674B2E /* Anisotropic */,
+				26F678611D77DF7F00674B2E /* Pyramid */,
+				26F678641D77DF7F00674B2E /* SphereWorld */,
+				26F678691D77DF7F00674B2E /* Tunnel */,
+			);
+			path = Chapter05;
+			sourceTree = "<group>";
+		};
+		26F6785C1D77DF7F00674B2E /* Anisotropic */ = {
+			isa = PBXGroup;
+			children = (
+				26F6785D1D77DF7F00674B2E /* brick.tga */,
+				26F6785E1D77DF7F00674B2E /* ceiling.tga */,
+				26F6785F1D77DF7F00674B2E /* floor.tga */,
+				26F678601D77DF7F00674B2E /* Tunnel.cpp */,
+			);
+			path = Anisotropic;
+			sourceTree = "<group>";
+		};
+		26F678611D77DF7F00674B2E /* Pyramid */ = {
+			isa = PBXGroup;
+			children = (
+				26F678621D77DF7F00674B2E /* Pyramid.cpp */,
+				26F678631D77DF7F00674B2E /* stone.tga */,
+			);
+			path = Pyramid;
+			sourceTree = "<group>";
+		};
+		26F678641D77DF7F00674B2E /* SphereWorld */ = {
+			isa = PBXGroup;
+			children = (
+				26F678651D77DF7F00674B2E /* Marble.tga */,
+				26F678661D77DF7F00674B2E /* Marslike.tga */,
+				26F678671D77DF7F00674B2E /* MoonLike.tga */,
+				26F678681D77DF7F00674B2E /* SphereWorld.cpp */,
+			);
+			path = SphereWorld;
+			sourceTree = "<group>";
+		};
+		26F678691D77DF7F00674B2E /* Tunnel */ = {
+			isa = PBXGroup;
+			children = (
+				26F6786A1D77DF7F00674B2E /* brick.tga */,
+				26F6786B1D77DF7F00674B2E /* ceiling.tga */,
+				26F6786C1D77DF7F00674B2E /* floor.tga */,
+				26F6786D1D77DF7F00674B2E /* Tunnel.cpp */,
+			);
+			path = Tunnel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +268,74 @@
 			name = ChapterFiveOpenGL;
 			productName = ChapterFiveOpenGL;
 			productReference = 264849DA1D77DBFE0063EB25 /* ChapterFiveOpenGL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26F6784C1D77DD9300674B2E /* Anisotropic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26F678551D77DD9300674B2E /* Build configuration list for PBXNativeTarget "Anisotropic" */;
+			buildPhases = (
+				26F6784D1D77DD9300674B2E /* Sources */,
+				26F6784E1D77DD9300674B2E /* Frameworks */,
+				26F678521D77DD9300674B2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Anisotropic;
+			productName = ChapterFiveOpenGL;
+			productReference = 26F678581D77DD9300674B2E /* Anisotropic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26F6790D1D78315300674B2E /* SphereWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26F679191D78315300674B2E /* Build configuration list for PBXNativeTarget "SphereWorld" */;
+			buildPhases = (
+				26F6790E1D78315300674B2E /* Sources */,
+				26F679131D78315300674B2E /* Frameworks */,
+				26F679171D78315300674B2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SphereWorld;
+			productName = ChapterFiveOpenGL;
+			productReference = 26F6791C1D78315300674B2E /* SphereWorld.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26F6793F1D785C7200674B2E /* Pyramid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26F6794E1D785C7200674B2E /* Build configuration list for PBXNativeTarget "Pyramid" */;
+			buildPhases = (
+				26F679401D785C7200674B2E /* Sources */,
+				26F679451D785C7200674B2E /* Frameworks */,
+				26F679491D785C7200674B2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pyramid;
+			productName = ChapterFiveOpenGL;
+			productReference = 26F679511D785C7200674B2E /* Pyramid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26F679531D785C8500674B2E /* Tunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26F679621D785C8500674B2E /* Build configuration list for PBXNativeTarget "Tunnel" */;
+			buildPhases = (
+				26F679541D785C8500674B2E /* Sources */,
+				26F679591D785C8500674B2E /* Frameworks */,
+				26F6795D1D785C8500674B2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tunnel;
+			productName = ChapterFiveOpenGL;
+			productReference = 26F679651D785C8500674B2E /* Tunnel.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,6 +366,10 @@
 			projectRoot = "";
 			targets = (
 				264849D91D77DBFE0063EB25 /* ChapterFiveOpenGL */,
+				26F6784C1D77DD9300674B2E /* Anisotropic */,
+				26F6790D1D78315300674B2E /* SphereWorld */,
+				26F6793F1D785C7200674B2E /* Pyramid */,
+				26F679531D785C8500674B2E /* Tunnel */,
 			);
 		};
 /* End PBXProject section */
@@ -128,8 +379,61 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26F678731D77DF7F00674B2E /* stone.tga in Resources */,
+				26F6786E1D77DF7F00674B2E /* brick.tga in Resources */,
+				26F678781D77DF7F00674B2E /* brick.tga in Resources */,
+				26F678701D77DF7F00674B2E /* floor.tga in Resources */,
+				26F6786F1D77DF7F00674B2E /* ceiling.tga in Resources */,
+				26F678761D77DF7F00674B2E /* MoonLike.tga in Resources */,
 				264849E41D77DBFE0063EB25 /* Assets.xcassets in Resources */,
-				264849E71D77DBFE0063EB25 /* MainMenu.xib in Resources */,
+				26F678741D77DF7F00674B2E /* Marble.tga in Resources */,
+				26F678791D77DF7F00674B2E /* ceiling.tga in Resources */,
+				26F678751D77DF7F00674B2E /* Marslike.tga in Resources */,
+				26F6787A1D77DF7F00674B2E /* floor.tga in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F678521D77DD9300674B2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F6793B1D785BEB00674B2E /* floor.tga in Resources */,
+				26F6793A1D785BE700674B2E /* ceiling.tga in Resources */,
+				26F679391D785BE300674B2E /* brick.tga in Resources */,
+				26F678531D77DD9300674B2E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F679171D78315300674B2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F6793E1D785C0E00674B2E /* MoonLike.tga in Resources */,
+				26F6793D1D785C0900674B2E /* Marslike.tga in Resources */,
+				26F6793C1D785C0500674B2E /* Marble.tga in Resources */,
+				26F679181D78315300674B2E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F679491D785C7200674B2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F679691D785CC800674B2E /* stone.tga in Resources */,
+				26F6794A1D785C7200674B2E /* MoonLike.tga in Resources */,
+				26F6794B1D785C7200674B2E /* Marslike.tga in Resources */,
+				26F6794C1D785C7200674B2E /* Marble.tga in Resources */,
+				26F6794D1D785C7200674B2E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F6795D1D785C8500674B2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F6796E1D785D0300674B2E /* floor.tga in Resources */,
+				26F6796D1D785CFC00674B2E /* ceiling.tga in Resources */,
+				26F6796C1D785CF500674B2E /* brick.tga in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,23 +444,56 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				264849E21D77DBFE0063EB25 /* main.m in Sources */,
-				264849DF1D77DBFE0063EB25 /* AppDelegate.m in Sources */,
+				26F678771D77DF7F00674B2E /* SphereWorld.cpp in Sources */,
+				26F6787B1D77DF7F00674B2E /* Tunnel.cpp in Sources */,
+				26F678721D77DF7F00674B2E /* Pyramid.cpp in Sources */,
+				26F678711D77DF7F00674B2E /* Tunnel.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F6784D1D77DD9300674B2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F6787F1D77DFC300674B2E /* ceiling.tga in Sources */,
+				26F6787E1D77DFBF00674B2E /* floor.tga in Sources */,
+				26F6787D1D77DFB500674B2E /* brick.tga in Sources */,
+				26F6787C1D77DFA600674B2E /* Tunnel.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F6790E1D78315300674B2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F6791E1D78318400674B2E /* Marble.tga in Sources */,
+				26F6791F1D78318400674B2E /* Marslike.tga in Sources */,
+				26F679201D78318400674B2E /* MoonLike.tga in Sources */,
+				26F679211D78318400674B2E /* SphereWorld.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F679401D785C7200674B2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F679681D785CC200674B2E /* stone.tga in Sources */,
+				26F679671D785CBD00674B2E /* Pyramid.cpp in Sources */,
+				26F679411D785C7200674B2E /* Marble.tga in Sources */,
+				26F679421D785C7200674B2E /* Marslike.tga in Sources */,
+				26F679431D785C7200674B2E /* MoonLike.tga in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F679541D785C8500674B2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F6796B1D785CE600674B2E /* Tunnel.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		264849E51D77DBFE0063EB25 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				264849E61D77DBFE0063EB25 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		264849E91D77DBFE0063EB25 /* Debug */ = {
@@ -245,8 +582,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(GLTOOLS_INCLUDE)";
 				INFOPLIST_FILE = ChapterFiveOpenGL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.xuliang.ChapterFiveOpenGL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -257,8 +599,157 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(GLTOOLS_INCLUDE)";
 				INFOPLIST_FILE = ChapterFiveOpenGL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.xuliang.ChapterFiveOpenGL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		26F678561D77DD9300674B2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(GLTOOLS_INCLUDE)";
+				INFOPLIST_FILE = Anisotropic.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks $(inherited)";
+				LIBRARY_SEARCH_PATHS = /Users/xuliang/SB5/Src/GLTools;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.xuliang.ChapterFiveOpenGL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.11;
+			};
+			name = Debug;
+		};
+		26F678571D77DD9300674B2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(GLTOOLS_INCLUDE)";
+				INFOPLIST_FILE = Anisotropic.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks $(inherited)";
+				LIBRARY_SEARCH_PATHS = /Users/xuliang/SB5/Src/GLTools;
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.xuliang.ChapterFiveOpenGL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.11;
+			};
+			name = Release;
+		};
+		26F6791A1D78315300674B2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(GLTOOLS_INCLUDE)";
+				INFOPLIST_FILE = "Anisotropic copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/xuliang/SB5/Src/GLTools,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GLTools",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.xuliang.ChapterFiveOpenGL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		26F6791B1D78315300674B2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(GLTOOLS_INCLUDE)";
+				INFOPLIST_FILE = "Anisotropic copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/xuliang/SB5/Src/GLTools,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GLTools",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.xuliang.ChapterFiveOpenGL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		26F6794F1D785C7200674B2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(GLTOOLS_INCLUDE)";
+				INFOPLIST_FILE = "SphereWorld copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/xuliang/SB5/Src/GLTools,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GLTools",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.xuliang.ChapterFiveOpenGL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		26F679501D785C7200674B2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(GLTOOLS_INCLUDE)";
+				INFOPLIST_FILE = "SphereWorld copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/xuliang/SB5/Src/GLTools,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GLTools",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.xuliang.ChapterFiveOpenGL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		26F679631D785C8500674B2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(GLTOOLS_INCLUDE)";
+				INFOPLIST_FILE = "Pyramid copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/xuliang/SB5/Src/GLTools,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GLTools",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.xuliang.ChapterFiveOpenGL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		26F679641D785C8500674B2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(GLTOOLS_INCLUDE)";
+				INFOPLIST_FILE = "Pyramid copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/xuliang/SB5/Src/GLTools,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GLTools",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.xuliang.ChapterFiveOpenGL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -283,6 +774,43 @@
 				264849ED1D77DBFE0063EB25 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26F678551D77DD9300674B2E /* Build configuration list for PBXNativeTarget "Anisotropic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26F678561D77DD9300674B2E /* Debug */,
+				26F678571D77DD9300674B2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26F679191D78315300674B2E /* Build configuration list for PBXNativeTarget "SphereWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26F6791A1D78315300674B2E /* Debug */,
+				26F6791B1D78315300674B2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26F6794E1D785C7200674B2E /* Build configuration list for PBXNativeTarget "Pyramid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26F6794F1D785C7200674B2E /* Debug */,
+				26F679501D785C7200674B2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26F679621D785C8500674B2E /* Build configuration list for PBXNativeTarget "Tunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26F679631D785C8500674B2E /* Debug */,
+				26F679641D785C8500674B2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

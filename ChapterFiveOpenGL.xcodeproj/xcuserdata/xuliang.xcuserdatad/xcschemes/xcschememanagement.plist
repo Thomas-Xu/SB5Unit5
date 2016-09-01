@@ -4,15 +4,55 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Anisotropic.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>ChapterFiveOpenGL.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Pyramid.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>SphereWorld.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Tunnel.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>264849D91D77DBFE0063EB25</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>26F6784C1D77DD9300674B2E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>26F6790D1D78315300674B2E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>26F6793F1D785C7200674B2E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>26F679531D785C8500674B2E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
