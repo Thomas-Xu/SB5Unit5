@@ -10,6 +10,18 @@
 		264849E41D77DBFE0063EB25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 264849E31D77DBFE0063EB25 /* Assets.xcassets */; };
 		264849EF1D77DCB00063EB25 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264849EE1D77DCB00063EB25 /* GLUT.framework */; };
 		264849F11D77DCB70063EB25 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264849F01D77DCB70063EB25 /* OpenGL.framework */; };
+		2675E81A1D8004DA007AD322 /* Marble.tga in Sources */ = {isa = PBXBuildFile; fileRef = 26F678651D77DF7F00674B2E /* Marble.tga */; };
+		2675E81B1D8004DA007AD322 /* Marslike.tga in Sources */ = {isa = PBXBuildFile; fileRef = 26F678661D77DF7F00674B2E /* Marslike.tga */; };
+		2675E81C1D8004DA007AD322 /* MoonLike.tga in Sources */ = {isa = PBXBuildFile; fileRef = 26F678671D77DF7F00674B2E /* MoonLike.tga */; };
+		2675E81F1D8004DA007AD322 /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F679351D785A7000674B2E /* libGLTools.a */; };
+		2675E8201D8004DA007AD322 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264849F01D77DCB70063EB25 /* OpenGL.framework */; };
+		2675E8211D8004DA007AD322 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264849EE1D77DCB00063EB25 /* GLUT.framework */; };
+		2675E8231D8004DA007AD322 /* MoonLike.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F678671D77DF7F00674B2E /* MoonLike.tga */; };
+		2675E8241D8004DA007AD322 /* Marslike.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F678661D77DF7F00674B2E /* Marslike.tga */; };
+		2675E8251D8004DA007AD322 /* Marble.tga in Resources */ = {isa = PBXBuildFile; fileRef = 26F678651D77DF7F00674B2E /* Marble.tga */; };
+		2675E8261D8004DA007AD322 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 264849E31D77DBFE0063EB25 /* Assets.xcassets */; };
+		2675E82E1D800586007AD322 /* MySphereWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2675E82D1D800586007AD322 /* MySphereWorld.cpp */; };
+		2675E8301D818DAE007AD322 /* 25A58PICakr.png in Resources */ = {isa = PBXBuildFile; fileRef = 2675E82F1D818DAE007AD322 /* 25A58PICakr.png */; };
 		26F678501D77DD9300674B2E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264849F01D77DCB70063EB25 /* OpenGL.framework */; };
 		26F678511D77DD9300674B2E /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264849EE1D77DCB00063EB25 /* GLUT.framework */; };
 		26F678531D77DD9300674B2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 264849E31D77DBFE0063EB25 /* Assets.xcassets */; };
@@ -75,6 +87,10 @@
 		264849E81D77DBFE0063EB25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		264849EE1D77DCB00063EB25 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		264849F01D77DCB70063EB25 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		2675E82A1D8004DA007AD322 /* MySphereWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySphereWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2675E82B1D8004DA007AD322 /* SphereWorld copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SphereWorld copy2-Info.plist"; path = "/Users/xuliang/Documents/IosWorkSpace/ChapterFiveOpenGL/SphereWorld copy2-Info.plist"; sourceTree = "<absolute>"; };
+		2675E82D1D800586007AD322 /* MySphereWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MySphereWorld.cpp; sourceTree = "<group>"; };
+		2675E82F1D818DAE007AD322 /* 25A58PICakr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 25A58PICakr.png; sourceTree = "<group>"; };
 		26F678581D77DD9300674B2E /* Anisotropic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anisotropic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F6785D1D77DF7F00674B2E /* brick.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = brick.tga; sourceTree = "<group>"; };
 		26F6785E1D77DF7F00674B2E /* ceiling.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = ceiling.tga; sourceTree = "<group>"; };
@@ -107,6 +123,16 @@
 				26F679361D785A7000674B2E /* libGLTools.a in Frameworks */,
 				264849F11D77DCB70063EB25 /* OpenGL.framework in Frameworks */,
 				264849EF1D77DCB00063EB25 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2675E81E1D8004DA007AD322 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2675E81F1D8004DA007AD322 /* libGLTools.a in Frameworks */,
+				2675E8201D8004DA007AD322 /* OpenGL.framework in Frameworks */,
+				2675E8211D8004DA007AD322 /* GLUT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +190,7 @@
 				26F6791D1D78315300674B2E /* Anisotropic copy-Info.plist */,
 				26F679521D785C7200674B2E /* SphereWorld copy-Info.plist */,
 				26F679661D785C8500674B2E /* Pyramid copy-Info.plist */,
+				2675E82B1D8004DA007AD322 /* SphereWorld copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,6 +202,7 @@
 				26F6791C1D78315300674B2E /* SphereWorld.app */,
 				26F679511D785C7200674B2E /* Pyramid.app */,
 				26F679651D785C8500674B2E /* Tunnel.app */,
+				2675E82A1D8004DA007AD322 /* MySphereWorld.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,6 +210,7 @@
 		264849DC1D77DBFE0063EB25 /* ChapterFiveOpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				2675E82C1D80055A007AD322 /* MySphereWorld */,
 				26F6785B1D77DF7F00674B2E /* Chapter05 */,
 				264849E31D77DBFE0063EB25 /* Assets.xcassets */,
 				264849E81D77DBFE0063EB25 /* Info.plist */,
@@ -195,6 +224,15 @@
 			children = (
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2675E82C1D80055A007AD322 /* MySphereWorld */ = {
+			isa = PBXGroup;
+			children = (
+				2675E82F1D818DAE007AD322 /* 25A58PICakr.png */,
+				2675E82D1D800586007AD322 /* MySphereWorld.cpp */,
+			);
+			name = MySphereWorld;
 			sourceTree = "<group>";
 		};
 		26F6785B1D77DF7F00674B2E /* Chapter05 */ = {
@@ -268,6 +306,23 @@
 			name = ChapterFiveOpenGL;
 			productName = ChapterFiveOpenGL;
 			productReference = 264849DA1D77DBFE0063EB25 /* ChapterFiveOpenGL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2675E8181D8004DA007AD322 /* MySphereWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2675E8271D8004DA007AD322 /* Build configuration list for PBXNativeTarget "MySphereWorld" */;
+			buildPhases = (
+				2675E8191D8004DA007AD322 /* Sources */,
+				2675E81E1D8004DA007AD322 /* Frameworks */,
+				2675E8221D8004DA007AD322 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MySphereWorld;
+			productName = ChapterFiveOpenGL;
+			productReference = 2675E82A1D8004DA007AD322 /* MySphereWorld.app */;
 			productType = "com.apple.product-type.application";
 		};
 		26F6784C1D77DD9300674B2E /* Anisotropic */ = {
@@ -370,6 +425,7 @@
 				26F6790D1D78315300674B2E /* SphereWorld */,
 				26F6793F1D785C7200674B2E /* Pyramid */,
 				26F679531D785C8500674B2E /* Tunnel */,
+				2675E8181D8004DA007AD322 /* MySphereWorld */,
 			);
 		};
 /* End PBXProject section */
@@ -390,6 +446,18 @@
 				26F678791D77DF7F00674B2E /* ceiling.tga in Resources */,
 				26F678751D77DF7F00674B2E /* Marslike.tga in Resources */,
 				26F6787A1D77DF7F00674B2E /* floor.tga in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2675E8221D8004DA007AD322 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2675E8231D8004DA007AD322 /* MoonLike.tga in Resources */,
+				2675E8241D8004DA007AD322 /* Marslike.tga in Resources */,
+				2675E8251D8004DA007AD322 /* Marble.tga in Resources */,
+				2675E8261D8004DA007AD322 /* Assets.xcassets in Resources */,
+				2675E8301D818DAE007AD322 /* 25A58PICakr.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +516,17 @@
 				26F6787B1D77DF7F00674B2E /* Tunnel.cpp in Sources */,
 				26F678721D77DF7F00674B2E /* Pyramid.cpp in Sources */,
 				26F678711D77DF7F00674B2E /* Tunnel.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2675E8191D8004DA007AD322 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2675E81A1D8004DA007AD322 /* Marble.tga in Sources */,
+				2675E81B1D8004DA007AD322 /* Marslike.tga in Sources */,
+				2675E82E1D800586007AD322 /* MySphereWorld.cpp in Sources */,
+				2675E81C1D8004DA007AD322 /* MoonLike.tga in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +684,44 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.xuliang.ChapterFiveOpenGL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2675E8281D8004DA007AD322 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(GLTOOLS_INCLUDE)";
+				INFOPLIST_FILE = "SphereWorld copy2-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/xuliang/SB5/Src/GLTools,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GLTools",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = xyz.xuliang.ChapterFiveOpenGL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2675E8291D8004DA007AD322 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(GLTOOLS_INCLUDE)";
+				INFOPLIST_FILE = "SphereWorld copy2-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/xuliang/SB5/Src/GLTools,
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/GLTools",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.xuliang.ChapterFiveOpenGL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -772,6 +889,15 @@
 			buildConfigurations = (
 				264849EC1D77DBFE0063EB25 /* Debug */,
 				264849ED1D77DBFE0063EB25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2675E8271D8004DA007AD322 /* Build configuration list for PBXNativeTarget "MySphereWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2675E8281D8004DA007AD322 /* Debug */,
+				2675E8291D8004DA007AD322 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

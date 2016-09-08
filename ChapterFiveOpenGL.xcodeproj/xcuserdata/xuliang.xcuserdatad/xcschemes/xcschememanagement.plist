@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>MySphereWorld.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>Pyramid.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -33,6 +38,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>264849D91D77DBFE0063EB25</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2675E8181D8004DA007AD322</key>
 		<dict>
 			<key>primary</key>
 			<true/>

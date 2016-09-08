@@ -24,6 +24,8 @@ GLMatrixStack		projectionMatrix;		// Projection Matrix
 GLFrustum			viewFrustum;			// View Frustum
 GLGeometryTransform	transformPipeline;		// Geometry Transform Pipeline
 
+GLBatch             pyramidBatch;
+
 GLBatch             floorBatch;
 GLBatch             ceilingBatch;
 GLBatch             leftWallBatch;
@@ -75,7 +77,30 @@ void ProcessMenu(int value)
                 
             case 5:
                 glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-                break;                
+                break;
+            case 6:
+                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+                break;
+                
+            case 7:
+                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+                break;
+                
+            case 8:
+                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST_MIPMAP_NEAREST);
+                break;
+                
+            case 9:
+                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST_MIPMAP_LINEAR);
+                break;
+                
+            case 10:
+                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR_MIPMAP_NEAREST);
+                break;
+                
+            case 11:
+                glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+                break;
             }
         }
         
@@ -120,6 +145,19 @@ void SetupRC()
         // Don't need original texture data any more
         free(pBytes);
         }
+        
+        
+    pyramidBatch.Begin(GL_TRIANGLE_STRIP, 3,1);
+        
+        pyramidBatch.MultiTexCoord2f(0, 0.0f, 0.0f);
+        pyramidBatch.Vertex3f(-10.0f, -10.0f, -15.0f);
+        
+        pyramidBatch.MultiTexCoord2f(0, 1.0f, 0.0f);
+        pyramidBatch.Vertex3f(10.0f, -10.0f, -15.0f);
+        
+        pyramidBatch.MultiTexCoord2f(0, 0.0f, 1.0f);
+        pyramidBatch.Vertex3f(0.0f, 10.0f, -15.0f);
+    pyramidBatch.End();
         
     // Build Geometry
     GLfloat z;
@@ -208,10 +246,10 @@ void ShutdownRC(void)
 void SpecialKeys(int key, int x, int y)
 	{
 	if(key == GLUT_KEY_UP)
-        viewZ += 0.5f;
+        viewZ += 1.5f;
 
 	if(key == GLUT_KEY_DOWN)
-        viewZ -= 0.5f;
+        viewZ -= 1.5f;
 
 	// Refresh the Window
 	glutPostRedisplay();
@@ -252,6 +290,9 @@ void RenderScene(void)
         shaderManager.UseStockShader(GLT_SHADER_TEXTURE_REPLACE, transformPipeline.GetModelViewProjectionMatrix(), 0);
 
         glBindTexture(GL_TEXTURE_2D, textures[TEXTURE_FLOOR]);
+        pyramidBatch.Draw();
+        
+        glBindTexture(GL_TEXTURE_2D, textures[TEXTURE_FLOOR]);
         floorBatch.Draw();
         
         glBindTexture(GL_TEXTURE_2D, textures[TEXTURE_CEILING]);
@@ -291,7 +332,14 @@ int main(int argc, char *argv[])
     glutAddMenuEntry("GL_NEAREST_MIPMAP_LINEAR", 3);
     glutAddMenuEntry("GL_LINEAR_MIPMAP_NEAREST", 4);
     glutAddMenuEntry("GL_LINEAR_MIPMAP_LINEAR", 5);
-
+        
+    glutAddMenuEntry("GL_NEAREST",6);
+    glutAddMenuEntry("GL_LINEAR",7);
+    glutAddMenuEntry("GL_NEAREST_MIPMAP_NEAREST",8);
+    glutAddMenuEntry("GL_NEAREST_MIPMAP_LINEAR", 9);
+    glutAddMenuEntry("GL_LINEAR_MIPMAP_NEAREST", 10);
+    glutAddMenuEntry("GL_LINEAR_MIPMAP_LINEAR", 11);
+    
     glutAttachMenu(GLUT_RIGHT_BUTTON);
     
     GLenum err = glewInit();

@@ -120,7 +120,7 @@ bool LoadTGATexture(const char *szFileName, GLenum minFilter, GLenum magFilter, 
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, minFilter);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, magFilter);
 		
-	glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+	glPixelStorei(GL_UNPACK_ALIGNMENT, 1);//紧密包装像素数据
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_COMPRESSED_RGB, nWidth, nHeight, 0,
 				 eFormat, GL_UNSIGNED_BYTE, pBits);
 	
